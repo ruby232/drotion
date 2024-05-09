@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sessions
+    - node.type.workout_plan
+    - paragraphs.paragraphs_type.workout_plan_day
+  module:
+    - entity_reference_revisions
+id: node.workout_plan.field_sessions
+field_name: field_sessions
+entity_type: node
+bundle: workout_plan
+label: Sessions
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      workout_plan_day: workout_plan_day
+    negate: 0
+    target_bundles_drag_drop:
+      workout_plan_day:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

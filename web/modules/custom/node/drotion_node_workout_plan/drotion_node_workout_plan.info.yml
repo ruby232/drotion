@@ -1,0 +1,20 @@
+name: 'Node - Workout plan'
+type: module
+description: 'Configs for node.'
+package: drotion
+core_version_requirement: ^10
+dependencies:
+  - drupal:paragraphs
+  - drotion_paragraph_workout_plan_day:drotion_paragraph_workout_plan_day
+  - drotion_fieldstorage:drotion_fieldstorage
+
+config_devel:
+  - node.type.workout_plan
+  - field.field.node.workout_plan.body
+  - field.field.node.workout_plan.field_start
+  - field.field.node.workout_plan.field_finish
+  - field.field.node.workout_plan.field_sessions
+  - core.entity_view_display.node.workout_plan.teaser
+  - core.base_field_override.node.workout_plan.promote
+  - core.entity_form_display.node.workout_plan.default
+  - core.entity_view_display.node.workout_plan.default

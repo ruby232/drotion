@@ -1,0 +1,16 @@
+name: 'Paragraph - Workout planday'
+type: module
+description: 'Configs for File in web server.'
+package: drotion
+core_version_requirement: ^10
+dependencies:
+  - drupal:paragraphs
+  - drotion_media_video:drotion_media_video
+
+config_devel:
+ - field.field.paragraph.workout_plan_day.field_day
+ - field.field.paragraph.workout_plan_day.field_done
+ - field.field.paragraph.workout_plan_day.field_videos
+ - paragraphs.paragraphs_type.workout_plan_day
+ - core.entity_form_display.paragraph.workout_plan_day.default
+ - core.entity_view_display.paragraph.workout_plan_day.default

@@ -1,0 +1,58 @@
+name: 'Drotion'
+type: profile
+description: 'Drotion profile'
+core_version_requirement: ^10
+exclusive: true
+version: VERSION
+keep_existing: true
+themes:
+  - claro
+
+install:
+  # Core
+  - node
+  - history
+  - big_pipe
+  - block
+  - ckeditor5
+  - config
+  - contextual
+  - menu_link_content
+  - datetime
+  - editor
+  - image
+  - media
+  - media_library
+  - menu_ui
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - taxonomy
+  - dblog
+  - sdc
+  - search
+  - shortcut
+  - toolbar
+  - field_ui
+  - file
+  - views
+  - views_ui
+  - automated_cron
+# Contrib
+  - admin_toolbar
+  - backup_migrate
+  - devel
+  - devutils
+  - paragraphs
+  - pathauto
+  - smart_trim
+  - config_devel
+  - twig_field_value
+  - twig_tweak
+# Custom
+  - drotion_node_workout_plan
+
+config_devel:
+  - system.theme
+  - system.site

@@ -1,0 +1,18 @@
+name: 'Field Storage'
+type: module
+description: 'Configs for File in web server.'
+package: drotion
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:media
+
+config_devel:
+  - field.storage.media.field_media_video_file
+  - field.storage.node.body
+  - field.storage.node.field_start
+  - field.storage.node.field_finish
+  - field.storage.node.field_sessions
+  - field.storage.paragraph.field_day
+  - field.storage.paragraph.field_done
+  - field.storage.paragraph.field_videos
+  - field.storage.media.field_media_video_file

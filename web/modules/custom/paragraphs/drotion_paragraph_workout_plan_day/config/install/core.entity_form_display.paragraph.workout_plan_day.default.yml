@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.workout_plan_day.field_day
+    - field.field.paragraph.workout_plan_day.field_done
+    - field.field.paragraph.workout_plan_day.field_videos
+    - paragraphs.paragraphs_type.workout_plan_day
+  module:
+    - datetime
+    - media_library
+id: paragraph.workout_plan_day.default
+targetEntityType: paragraph
+bundle: workout_plan_day
+mode: default
+content:
+  field_day:
+    type: datetime_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_done:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_videos:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

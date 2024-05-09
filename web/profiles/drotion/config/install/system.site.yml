@@ -1,0 +1,12 @@
+langcode: en
+uuid: 48112634-6fc5-4277-95a4-ae24977875ba
+name: 'Drush Site-Install'
+mail: one@byt.com
+slogan: 'Lo que no esta aquí no existe.'
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

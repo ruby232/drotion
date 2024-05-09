@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: workout_plan_day
+label: 'Workout plan day'
+icon_uuid: null
+icon_default: null
+description: 'Element that contains the information of a training day.'
+behavior_plugins: {  }

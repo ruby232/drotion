@@ -1,0 +1,16 @@
+name: 'media_video'
+type: module
+description: 'Configs for File in web server.'
+package: drotion
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:media
+  - drotion_fieldstorage:drotion_fieldstorage
+
+config_devel:
+  - media.type.video
+  - field.field.media.video.field_media_video_file
+  - core.entity_form_display.media.video.default
+  - core.entity_view_display.media.video.default
+  - core.entity_form_display.media.video.media_library
+  - core.entity_view_display.media.video.media_library

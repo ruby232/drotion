@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_finish
+    - node.type.workout_plan
+  module:
+    - datetime
+id: node.workout_plan.field_finish
+field_name: field_finish
+entity_type: node
+bundle: workout_plan
+label: Finish
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: relative
+    default_date: '+60 days'
+default_value_callback: ''
+settings: {  }
+field_type: datetime
