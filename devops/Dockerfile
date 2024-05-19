@@ -43,6 +43,7 @@ RUN apk update && \
     rm -rf /tmp/* 77 && \
     curl -sS https://getcomposer.org/installer | php -- --version=2.7.2 --install-dir=/usr/local/bin --filename=composer
 
+ARG CACHE_DATE=2024-01-01
 # Copy configs files
 COPY devops/assets/php-fpm.conf /etc/php-fpm.conf
 COPY devops/assets/supervisord.conf /etc/supervisord.conf
@@ -56,7 +57,6 @@ RUN chmod +x /usr/sbin/entrypoint.sh && \
 
 # App
 WORKDIR /var/www/html
-ARG CACHE_DATE=2024-01-01
 COPY . ./
 RUN composer install --optimize-autoloader --no-dev --no-interaction --no-progress
 
