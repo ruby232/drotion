@@ -51,9 +51,12 @@ install:
   - config_devel
   - twig_field_value
   - twig_tweak
+  - chosen
 # Custom
   - drotion_node_workout_plan
+  - blocks_positions
 
 config_devel:
   - system.theme
   - system.site
+  - chosen.settings

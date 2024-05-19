@@ -23,10 +23,17 @@ content:
       width: 640
       height: 480
     third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   created: true
-  name: true
   thumbnail: true
   uid: true

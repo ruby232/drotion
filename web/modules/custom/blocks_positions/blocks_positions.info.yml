@@ -1,0 +1,16 @@
+name: 'Blocks positions'
+type: module
+description: 'Configs for block positions in theme.'
+package: drotion
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:block
+
+config_devel:
+  - block.block.ban_local_actions
+  - block.block.ban_page_title
+  - block.block.ban_primary_local_tasks
+  - block.block.ban_secondary_local_tasks
+  - block.block.ban_messages
+  - block.block.ban_content
+  - block.block.ban_breadcrumbs

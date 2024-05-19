@@ -7,8 +7,8 @@ dependencies:
     - field.field.paragraph.workout_plan_day.field_videos
     - paragraphs.paragraphs_type.workout_plan_day
   module:
+    - chosen_field
     - datetime
-    - media_library
 id: paragraph.workout_plan_day.default
 targetEntityType: paragraph
 bundle: workout_plan_day
@@ -22,17 +22,16 @@ content:
     third_party_settings: {  }
   field_done:
     type: boolean_checkbox
-    weight: 1
+    weight: 2
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   field_videos:
-    type: media_library_widget
-    weight: 2
+    type: chosen_select
+    weight: 1
     region: content
-    settings:
-      media_types: {  }
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true
