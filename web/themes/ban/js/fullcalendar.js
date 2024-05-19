@@ -25,6 +25,24 @@
             const ajaxSettings = {
               url: `/paragraphs_edit/node/${workout_plan_id}/paragraphs/${id}/edit?_wrapper_format=drupal_modal`,
               dialogType: 'modal',
+              dialog: { width: 800 },
+            };
+            const ajaxObject = Drupal.ajax(ajaxSettings);
+            ajaxObject.execute();
+
+          },
+          dateClick: function (info) {
+            const date = info.dateStr;
+            // check if there is event in this date
+            const event = events.find(event => event.start === date);
+            if (event) {
+              return;
+            }
+
+            const url =  `/paragraphs_add/node/${workout_plan_id}/paragraphs/field_sessions/workout_plan_day/add?edit[field_day][widget][0][value][date]=${date}&_wrapper_format=drupal_modal`;
+            const ajaxSettings = {
+              url: url,
+              dialogType: 'modal',
               title: '',
               dialog: { width: 800 },
             };

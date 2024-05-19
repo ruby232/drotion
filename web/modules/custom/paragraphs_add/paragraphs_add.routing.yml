@@ -1,0 +1,14 @@
+paragraphs_add.add_form:
+  path: '/paragraphs_add/{root_parent_type}/{root_parent}/paragraphs/{parent_field_name}/{paragraphs_type}/add'
+  defaults:
+    _entity_form: 'paragraph.entity_add'
+  requirements:
+    _entity_access: 'root_parent.add'
+    root_parent: \d+
+  options:
+    _admin_route: TRUE
+    parameters:
+      root_parent:
+        type: 'entity:{root_parent_type}'
+      paragraphs_type:
+        type: 'entity:paragraphs_type'

@@ -1,0 +1,8 @@
+name: "Paragraphs add"
+type: module
+description: "Allows users to add paragraphs."
+core_version_requirement: ^10
+package: Paragraphs
+
+dependencies:
+  - paragraphs:paragraphs

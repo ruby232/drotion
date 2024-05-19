@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Allows users to edit, clone and delete paragraphs.
+ */
+
+use Drupal\paragraphs_add\Form\ParagraphAddForm;
+
+/**
+ * Implements hook_entity_type_build().
+ */
+function paragraphs_add_entity_type_build(array &$entity_types) {
+  $entity_types['paragraph']->setFormClass('entity_add', ParagraphAddForm::class);
+}

@@ -52,6 +52,7 @@ install:
   - twig_field_value
   - twig_tweak
   - chosen
+  - prepopulate
 # Custom
   - drotion_node_workout_plan
   - blocks_positions

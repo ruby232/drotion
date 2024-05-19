@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5fde80f633ef25adc4e805be8090d9ba",
+    "content-hash": "06ae8ae09d4e85f51b24bbd8cca22b54",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2693,6 +2693,74 @@
                 "source": "https://cgit.drupalcode.org/pathauto",
                 "issues": "https://www.drupal.org/project/issues/pathauto",
                 "documentation": "https://www.drupal.org/docs/8/modules/pathauto"
+            }
+        },
+        {
+            "name": "drupal/prepopulate",
+            "version": "2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/prepopulate.git",
+                "reference": "8.x-2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/prepopulate-8.x-2.4.zip",
+                "reference": "8.x-2.4",
+                "shasum": "5e82bd6cbbaafc8320e8b3e48bc3862de4964e00"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "require-dev": {
+                "drupal/inline_entity_form": "^1.0@beta",
+                "drupal/og": "^1.0@alpha"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.4",
+                    "datestamp": "1678728834",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Heddn",
+                    "homepage": "https://www.drupal.org/u/heddn",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Jbrauer",
+                    "homepage": "https://www.drupal.org/u/jbrauer",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Eafarris",
+                    "homepage": "https://www.drupal.org/u/eafarris",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "FF1",
+                    "homepage": "https://www.drupal.org/u/ff1",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Allows form elements to be prepopulated from the URL.",
+            "homepage": "https://www.drupal.org/project/prepopulate",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/prepopulate",
+                "issues": "https://www.drupal.org/project/issues/prepopulate"
             }
         },
         {

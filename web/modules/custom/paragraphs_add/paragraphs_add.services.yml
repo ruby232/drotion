@@ -1,0 +1,4 @@
+services:
+  paragraphs_add.lineage.revisioner:
+    class: Drupal\paragraphs_add\ParagraphLineageRevisioner
+    arguments: ['@entity_type.manager']
