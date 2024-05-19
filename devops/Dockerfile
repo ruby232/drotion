@@ -48,7 +48,7 @@ COPY devops/assets/php-fpm.conf /etc/php-fpm.conf
 COPY devops/assets/supervisord.conf /etc/supervisord.conf
 COPY devops/assets/nginx/nginx.conf /etc/nginx/nginx.conf
 COPY devops/assets/nginx/php-fpm.conf /etc/nginx/sites-enabled/php-fpm.conf
-COPY devops/assets/php.ini /etc/php81/conf.d/custom.ini
+COPY devops/assets/php.ini /etc/php82/conf.d/custom.ini
 COPY devops/entrypoint.sh /usr/sbin/entrypoint.sh
 
 RUN chmod +x /usr/sbin/entrypoint.sh && \
