@@ -1,0 +1,39 @@
+.fc table{
+  margin-top: inherit;
+  margin-bottom: inherit;
+}
+
+.fc tr:hover, .fc tr:focus {
+   background: inherit;
+}
+
+.fc thead tr {
+  border: inherit;
+}
+
+.fc tr, .fc .draggable-table.tabledrag-disabled tr {
+  color: inherit;
+  background: inherit;
+}
+
+.fc th {
+  position: inherit;
+  height: inherit;
+  color: inherit;
+  background: inherit;
+  line-height: inherit;
+}
+
+.fc td{
+  height: inherit;
+}
+
+:root {
+  --fc-bg-event-opacity: 1;
+}
+
+.fc .fc-bg-event .fc-event-title {
+  font-size: 1em !important;
+  margin-top: 20px !important;
+  color: white;
+}

@@ -1,0 +1,39 @@
+<?php
+
+use Drupal\media\Entity\Media;
+use Drupal\paragraphs\Entity\Paragraph;
+
+function drotion_node_workout_plan_preprocess_node(array &$variables) {
+  $node = $variables['node'];
+  if($node->getType() !== 'workout_plan') {
+    return;
+  }
+
+  $sessions = $node->get('field_sessions')->getValue();
+  $events = [];
+  foreach ($sessions as $session) {
+    $sessionId = $session["target_id"];
+    $sessionParagraph = Paragraph::load($sessionId);
+    $date = $sessionParagraph->get('field_day')->getString();
+    $done = $sessionParagraph->get('field_done')->getString();
+    $videos = $sessionParagraph->get('field_videos')->getValue();
+    $mediasTitle = [];
+    foreach ($videos as $video) {
+      $videoId = $video["target_id"];
+      $videoMedia = Media::load($videoId);
+      $mediasTitle[] = $videoMedia->get('name')->getString();
+    }
+    $title = join(' + ', $mediasTitle);
+    $events[] = [
+      'date' => $date,
+      'done' => $done,
+      'title' => $title,
+      'id' => $sessionId
+    ];
+  }
+
+  // Pass data to javascript library
+  $variables['#attached']['drupalSettings']['drotion_node_workout_plan']['sessions'] = $events;
+  $variables['#attached']['drupalSettings']['drotion_node_workout_plan']['workout_plan_id'] = $node->id();
+}
+

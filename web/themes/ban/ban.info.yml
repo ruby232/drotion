@@ -1,0 +1,20 @@
+name: ban
+type: theme
+base theme: claro
+description: A flexible theme with a responsive, mobile-first layout.
+package: drotion
+core_version_requirement: ^10
+libraries:
+  - ban/global
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  featured: 'Featured'
+  breadcrumb: 'Breadcrumb'
+  content: 'Content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: 'Footer'
