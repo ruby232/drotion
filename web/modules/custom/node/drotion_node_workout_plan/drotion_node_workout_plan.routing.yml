@@ -1,0 +1,10 @@
+drotion_node_workout_plan.get_sessions:
+  path: 'api/v1/workout_plan/sessions/{workout_plan}'
+  defaults: { _controller: '\Drupal\drotion_node_workout_plan\Controller\APIController::getSessions' }
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
+  options:
+    parameters:
+      workout_plan:
+        type: 'entity:node'
