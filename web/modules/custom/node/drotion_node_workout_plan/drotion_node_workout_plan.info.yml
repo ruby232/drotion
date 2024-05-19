@@ -7,7 +7,9 @@ dependencies:
   - drupal:paragraphs
   - drotion_paragraph_workout_plan_day:drotion_paragraph_workout_plan_day
   - drotion_fieldstorage:drotion_fieldstorage
-  - paragraphs_modal_edit
+  - paragraphs_modal_edit:paragraphs_modal_edit
+  - paragraphs_add:paragraphs_add
+  - chosen:chosen_field
 
 config_devel:
   - node.type.workout_plan
