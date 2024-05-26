@@ -15,6 +15,7 @@ RUN apk update && \
     php${PHP_VERSION}-curl \
     php${PHP_VERSION}-xml \
     php${PHP_VERSION}-pdo \
+    php${PHP_VERSION}-mysqli \
     php${PHP_VERSION}-pdo_mysql \
     php${PHP_VERSION}-pdo_sqlite \
     php${PHP_VERSION}-sqlite3 \
