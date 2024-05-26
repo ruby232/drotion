@@ -1,0 +1,21 @@
+.field--name-field-links{
+    .field__item{
+        a{
+            color: var(--button-fg-color--primary);
+            background-color: var(--button--disabled-fg-color);
+            display: inline-block;
+            margin-block: var(--space-m);
+            margin-inline: 0 var(--space-s);
+            padding: calc(var(--space-m) - 1px) calc(var(--space-l) - 1px);
+            cursor: pointer;
+            text-align: center;
+            border: 1px solid transparent;
+            border-radius: var(--button-border-radius-size);
+            font-size: var(--font-size-base);
+            font-weight: 700;
+            line-height: 1rem;
+            appearance: none;
+            -webkit-font-smoothing: antialiased;
+        }
+    }
+}
